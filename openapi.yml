@@ -1,0 +1,134 @@
+openapi: 3.0.0
+info:
+  title: Pets API
+  description: A RESTful API for managing pets, tenants, users, and pet events.
+  version: 1.0.0
+servers:
+  - url: https://api.example.com/v1
+paths:
+  /tenants:
+    get:
+      summary: List all tenants
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Tenant"
+    post:
+      summary: Create a new tenant
+      requestBody:
+        description: The tenant to create
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TenantInput"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tenant"
+  /tenants/{tenantId}:
+    parameters:
+      - name: tenantId
+        in: path
+        description: The ID of the tenant to retrieve or update
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: Retrieve a tenant by ID
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tenant"
+    put:
+      summary: Update a tenant by ID
+      requestBody:
+        description: The updated tenant
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TenantInput"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tenant"
+    delete:
+      summary: Delete a tenant by ID
+      responses:
+        "204":
+          description: No content
+  /tenants/{tenantId}/events:
+    parameters:
+      - name: tenantId
+        in: path
+        description: The ID of the tenant to retrieve events for
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: List all events for a tenant
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TenantEvent"
+    post:
+      summary: Create a new event for a tenant
+      requestBody:
+        description: The event to create
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TenantEventInput"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TenantEvent"
+  /tenants/{tenantId}/events/{eventId}:
+    parameters:
+      - name: tenantId
+        in: path
+        description: The ID of the tenant that owns the event
+        required: true
+        schema:
+          type: integer
+      - name: eventId
+        in: path
+        description: The ID of the event to retrieve or update
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: Retrieve an event by ID
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Tenant"
