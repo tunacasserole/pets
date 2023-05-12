@@ -132,6 +132,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.4-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.14.4-x86_64-linux)
+      racc (~> 1.4)
     pg (1.5.3)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -198,6 +200,8 @@ GEM
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.29-x86_64-darwin)
       railties (>= 6.0.0)
+    tailwindcss-rails (2.0.29-x86_64-linux)
+      railties (>= 6.0.0)
     thor (1.2.1)
     tilt (2.1.0)
     timeout (0.3.2)
@@ -227,6 +231,7 @@ GEM
 PLATFORMS
   ruby
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -251,4 +256,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.5
+   2.4.13
