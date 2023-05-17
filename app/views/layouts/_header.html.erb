@@ -5,26 +5,9 @@
         Pet<span class="text-sky-900">Haven</span>
       </div>
     </div>
-    <div class="flex-1 flex items-center justify-end">
-      <div class="menu-item">
-        <span>home</span>
-      </div>
-      <div class="menu-item">
-        <span>pricing</span>
-      </div>
-      <div class="menu-item">
-        <span>signup</span>
-      </div>
-      <div class="menu-item group">
-        <span>pets</span>
-        <div class="hidden group-hover:block bg-pink-500 absolute top-full right-0 whitespace-nowrap rounded-b text-right">
-          <div class="submenu-item">
-            <span>View Pets</span>
-          </div>
-          <div class="submenu-item">
-            <span>My Pets</span>
-          </div>
-        </div>
-      </div>
+
+    <%= render partial: '/layouts/header/mobile' %>
+    <%= render partial: '/layouts/header/desktop' %>
+
     </nav>
   </header>
