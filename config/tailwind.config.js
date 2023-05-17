@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["QuickSand", ...defaultTheme.fontFamily.sans],
+        sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
       },
     },
   },
