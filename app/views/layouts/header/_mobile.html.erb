@@ -1,10 +1,10 @@
 <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
   <div
-    id="mobile-menu-button"
     class="group peer"
     data-controller="mobile"
     data-action="click->mobile#toggle"
   >
+  <%# The 3 Lines of the Hamburger %>
     <div
       class="
         top-0
@@ -45,6 +45,7 @@
       "
     ></div>
   </div>
+  
   <div
     class="
       peer-open:block
@@ -58,34 +59,23 @@
       left-0
     "
   >
-    <div class="menu-item">
-      <span>home</span>
+    <div class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
+      <span>Home</span>
     </div>
-    <div class="menu-item">
-      <span>pricing</span>
+    <div class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
+      <span>Pricing</span>
     </div>
-    <div class="menu-item">
-      <span>signup</span>
+    <div class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
+      <span>Signup</span>
     </div>
-    <div class="menu-item group">
-      <span>pets</span>
-      <div
-        class="
-          hidden
-          group-hover:block
-          bg-pink-500
-          absolute
-          top-full
-          right-0
-          whitespace-nowrap
-          rounded-b
-          text-right
-        "
-      >
-        <div class="submenu-item">
-          <span>View Pets</span>
+
+    <div class="relative h-full cursor-pointer text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
+      <div class="p-4 text-center font-bold group peer" data-controller="mobile" data-action="click->mobile#toggle">Pets</div>
+      <div class="hidden peer-open:block">
+        <div class="text-center p-4 relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out">
+          <span>All Pets</span>
         </div>
-        <div class="submenu-item">
+        <div class="text-center p-4 relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out">
           <span>My Pets</span>
         </div>
       </div>
