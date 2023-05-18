@@ -1,3 +1,59 @@
-<div  class=" flex flex-col items-center justify-center h-[calc(100vh-200px)] min-h-[400px]">
-  <%= image_tag('hero.jpg') %>
+<div
+  style="background-image: url(<%= image_url("hero") %>);"
+  class="
+    bg-cover
+    bg-center
+    bg-fixed
+    flex
+    flex-col
+    items-center
+    justify-center
+    h-[calc(100vh-200px)]
+    min-h-[400px]
+  "
+>
+
+  <div
+    class="
+      bg-white/30
+      py-2
+      px-4
+      rounded-xl
+      text-center
+      justify-center
+      items-center
+      backdrop-blur-md
+      min-h-[100px]
+    "
+  >
+    <div class="relative">
+      <%= image_tag "logo", style: "width: 200px" %>
+    </div>
+    <div class="text-5xl font-bold">
+      Pet<span class="text-sky-300">Haven</span>
+    </div>
+  </div>
+
+  <div class="font-bold mt-3 text-sm">Keep me updated with news and promotions</div>
+  <form class="mt-3 flex gap-2">
+    <input
+      type="email"
+      placeholder="Email"
+      class="
+        background-blur-md
+        rounded-sm
+        border-white/40
+        bg-white/30
+        border
+        p-2
+        font-bold
+        text-sky-900
+        placeholder-zinc-500
+        caret-pink-500
+        outline-pink-500
+        focus:outline
+      "
+    />
+  </form>
+  <button type="submit" class="cursor-pointer rounded-sm bg-pink-500 py-2 px-4 font-bold transition-colors hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20">Subscribe</div>
 </div>
