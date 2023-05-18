@@ -1,29 +1,94 @@
 <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
-  <div id="mobile-menu-button" class="group peer" data-controller="mobile" data-action="click->mobile#toggle">
-    <div class="top-0 transition-all group-open:top-2 group-open:rotate-45 bg-zinc-200 rounded-full w-8 h-1 relative"></div>
-    <div class="transition-all opacity-100 group-open:opacity-0 bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
-    <div class="top-0 transition-all group-open:-top-2 group-open:-rotate-45 bg-zinc-200 rounded-full w-8 h-1 relative mt-1"></div>
+  <div
+    id="mobile-menu-button"
+    class="group peer"
+    data-controller="mobile"
+    data-action="click->mobile#toggle"
+  >
+    <div
+      class="
+        top-0
+        transition-all
+        group-open:top-2
+        group-open:rotate-45
+        bg-zinc-200
+        rounded-full
+        w-8
+        h-1
+        relative
+      "
+    ></div>
+    <div
+      class="
+        transition-all
+        opacity-100
+        group-open:opacity-0
+        bg-zinc-200
+        rounded-full
+        w-8
+        h-1
+        mt-1
+      "
+    ></div>
+    <div
+      class="
+        top-0
+        transition-all
+        group-open:-top-2
+        group-open:-rotate-45
+        bg-zinc-200
+        rounded-full
+        w-8
+        h-1
+        relative
+        mt-1
+      "
+    ></div>
   </div>
-  <div class="peer-open:block hidden absolute top-[48px] bg-gradient-to-r from-rose-500 to-pink-500 w-full left-0">
-     <div class="menu-item">
-    <span>home</span>
-  </div>
-  <div class="menu-item">
-    <span>pricing</span>
-  </div>
-  <div class="menu-item">
-    <span>signup</span>
-  </div>
-  <div class="menu-item group">
-    <span>pets</span>
-    <div class="hidden group-hover:block bg-pink-500 absolute top-full right-0 whitespace-nowrap rounded-b text-right">
-      <div class="submenu-item">
-        <span>View Pets</span>
-      </div>
-      <div class="submenu-item">
-        <span>My Pets</span>
+  <div
+    class="
+      peer-open:block
+      hidden
+      absolute
+      top-[48px]
+      bg-gradient-to-r
+      from-rose-500
+      to-pink-500
+      w-full
+      left-0
+    "
+  >
+    <div class="menu-item">
+      <span>home</span>
+    </div>
+    <div class="menu-item">
+      <span>pricing</span>
+    </div>
+    <div class="menu-item">
+      <span>signup</span>
+    </div>
+    <div class="menu-item group">
+      <span>pets</span>
+      <div
+        class="
+          hidden
+          group-hover:block
+          bg-pink-500
+          absolute
+          top-full
+          right-0
+          whitespace-nowrap
+          rounded-b
+          text-right
+        "
+      >
+        <div class="submenu-item">
+          <span>View Pets</span>
+        </div>
+        <div class="submenu-item">
+          <span>My Pets</span>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </div>
