@@ -12,6 +12,19 @@ module.exports = {
       fontFamily: {
         sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
       },
+      keyframes: {
+        wavey: {
+          "0%, 100%": {
+            transform: "scaleY(0.5)",
+          },
+          "50%": {
+            transform: "scaleY(1.5)",
+          },
+        },
+      },
+      animation: {
+        wavey: "wavey 1s linear infinite",
+      },
     },
   },
   plugins: [
@@ -20,5 +33,6 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/container-queries"),
     require("../app/javascript/plugins/openVariant"),
+    require("../app/javascript/plugins/animationDelay"),
   ],
 };
