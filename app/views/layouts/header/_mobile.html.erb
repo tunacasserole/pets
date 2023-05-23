@@ -1,5 +1,9 @@
 <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
-  <div class="group peer" data-action="click->mobile#toggle">
+  <div
+    class="group peer"
+    data-controller="mobile"
+    data-action="click->mobile#toggle"
+  >
     <%# The 3 Lines of the Hamburger %>
     <div
       class="
@@ -123,7 +127,6 @@
     >
       <div
         class="p-4 text-center font-bold group peer"
-        data-controller="mobile"
         data-action="click->mobile#toggle"
       >Pets</div>
       <div class="hidden peer-open:block">
