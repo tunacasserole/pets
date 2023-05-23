@@ -1,48 +1,70 @@
 <div class="max-w-screen-lg mx-auto mt-20">
   <h2>Pets</h2>
   <p>Experience the joy and satisfaction of fostering.</p>
-  <div class="mt-4 flex w-full gap-4 pb-5 snap-x overflow-x-auto">
-    <%= render partial: "pet",
-    locals: {
-      name: "Snickerdoodle",
-      caption: "Look at little snickers, so cute!",
-      filename: "band1.jpg"
-    } %>
-    <%= render partial: "pet",
-    locals: {
-      name: "Snickerdoodle",
-      caption: "Look at little snickers, so cute!",
-      filename: "band2.jpg"
-    } %>
-    <%= render partial: "pet",
-    locals: {
-      name: "Snickerdoodle",
-      caption: "Look at little snickers, so cute!",
-      filename: "band3.jpg"
-    } %>
-    <%= render partial: "pet",
-    locals: {
-      name: "Snickerdoodle",
-      caption: "Look at little snickers, so cute!",
-      filename: "band4.jpg"
-    } %>
-    <%= render partial: "pet",
-    locals: {
-      name: "Snickerdoodle",
-      caption: "Look at little snickers, so cute!",
-      filename: "band5.jpg"
-    } %>
-    <%= render partial: "pet",
-    locals: {
-      name: "Snickerdoodle",
-      caption: "Look at little snickers, so cute!",
-      filename: "band6.jpg"
-    } %>
-    <%= render partial: "pet",
-    locals: {
-      name: "Snickerdoodle",
-      caption: "Look at little snickers, so cute!",
-      filename: "band7.jpg"
-    } %>
+  <div class="flex">
+    <div id="previous" class="text-5xl">
+      <i class="fa fa-angle-left"></i>
+    </div>
+    <div
+      id="carousel"
+      class="
+        scroll-smooth
+        flex-1
+        mt-4
+        flex
+        w-full
+        gap-4
+        pb-5
+        snap-x
+        overflow-x-auto
+      "
+    >
+      <%= render partial: "pet",
+      locals: {
+        name: "Snickerdoodle",
+        caption: "Look at little snickers, so cute!",
+        filename: "band1.jpg"
+      } %>
+      <%= render partial: "pet",
+      locals: {
+        name: "Snickerdoodle",
+        caption: "Look at little snickers, so cute!",
+        filename: "band2.jpg"
+      } %>
+      <%= render partial: "pet",
+      locals: {
+        name: "Snickerdoodle",
+        caption: "Look at little snickers, so cute!",
+        filename: "band3.jpg"
+      } %>
+      <%= render partial: "pet",
+      locals: {
+        name: "Snickerdoodle",
+        caption: "Look at little snickers, so cute!",
+        filename: "band4.jpg"
+      } %>
+      <%= render partial: "pet",
+      locals: {
+        name: "Snickerdoodle",
+        caption: "Look at little snickers, so cute!",
+        filename: "band5.jpg"
+      } %>
+      <%= render partial: "pet",
+      locals: {
+        name: "Snickerdoodle",
+        caption: "Look at little snickers, so cute!",
+        filename: "band6.jpg"
+      } %>
+      <%= render partial: "pet",
+      locals: {
+        name: "Snickerdoodle",
+        caption: "Look at little snickers, so cute!",
+        filename: "band7.jpg"
+      } %>
+    </div>
+    <div id="next" class="text-5xl">
+      <i class="fa fa-angle-right"></i>
+    </div>
   </div>
+
 </div>

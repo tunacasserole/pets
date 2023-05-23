@@ -70,3 +70,4 @@ end
 
 # ADDED GEMS
 gem "tailwindcss-rails"
+gem "font-awesome-sass"
