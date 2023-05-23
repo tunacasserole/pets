@@ -1,12 +1,24 @@
-<div class="max-w-screen-lg mx-auto mt-20">
+<div class="max-w-screen-lg mx-auto mt-20" data-controller="carousel">
   <h2>Pets</h2>
   <p>Experience the joy and satisfaction of fostering.</p>
   <div class="flex">
-    <div id="previous" class="text-5xl">
+    <div
+      data-action="click->carousel#previous"
+      class="
+        text-5xl
+        flex
+        justify-center
+        items-center
+        cursor-pointer
+        p-2
+        relative
+        -top-8
+      "
+    >
       <i class="fa fa-angle-left"></i>
     </div>
     <div
-      id="carousel"
+      data-carousel-target="carousel"
       class="
         scroll-smooth
         flex-1
@@ -62,7 +74,19 @@
         filename: "band7.jpg"
       } %>
     </div>
-    <div id="next" class="text-5xl">
+    <div
+      data-action="click->carousel#next"
+      class="
+        text-5xl
+        flex
+        justify-center
+        items-center
+        cursor-pointer
+        p-2
+        relative
+        -top-8
+      "
+    >
       <i class="fa fa-angle-right"></i>
     </div>
   </div>
