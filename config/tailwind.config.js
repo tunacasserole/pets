@@ -34,5 +34,6 @@ module.exports = {
     require("@tailwindcss/container-queries"),
     require("../app/javascript/plugins/openVariant"),
     require("../app/javascript/plugins/animationDelay"),
+    require("../app/javascript/plugins/tableCaption"),
   ],
 };
