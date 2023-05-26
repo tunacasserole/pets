@@ -35,5 +35,6 @@ module.exports = {
     require("../app/javascript/plugins/openVariant"),
     require("../app/javascript/plugins/animationDelay"),
     require("../app/javascript/plugins/tableCaption"),
+    require("../app/javascript/plugins/buttonPlugin"),
   ],
 };
